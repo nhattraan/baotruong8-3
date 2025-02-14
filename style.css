@@ -1,0 +1,29 @@
+header {background-color: #f6abb6; color: white; padding: 1px; font-family: "Playfair Display"; font-size: 30px;}
+footer {background-color: #f4b6c2; color: white; padding: 10px;}
+label {display: block; padding: 10px;}
+h2 {font-family: "Noto Serif"; text-align: center;}
+p {font-family: "Overpass";}
+.header {display: flex; justify-content: space-between; align-items: center; padding: 15px 20px; background-color: #f6abb6; border-bottom: 2px solid #ddd;}
+.tieu-de {display: flex; flex-direction: column;}
+.tieu-de .chinh {font-size: 50px; font-weight: bold; color: #333; font-family: "Anton", serif;}
+.tieu-de .phu {font-size: 30px; color: #777;}
+.logo {display: flex; align-items: center; gap: 10px;}
+.logo img {width: 100px; height: auto;}
+.thong-tin-truong {display: flex; flex-direction: column; text-align: right;}
+.thong-tin-truong .truong {font-size: 30px; font-weight: bold; color: #444;}
+.thong-tin-truong .lop {font-size: 20px; color: #777;}
+.content {background-color: #eee3e7; padding: 10px;}
+.baiviet {background-color: #ead5dc; padding: 5px; border: solid; border-color: #f6abb6; margin: 10px;}
+.bai-viet {background-color: #ead5dc; padding: 5px; border: solid; border-color: #f6abb6; margin: 10px; display: flex; align-items: flex-start; gap: 15px;}
+.bai-viet img {width: 150px; height: auto;}
+.bai-viet-chu {display: flex; flex-direction: column;}
+.bai-viet-tieu-de {font-size: 18px; font-weight: bold;}
+.bai-viet-doan-gioi-thieu {margin-top: 8px;}
+.menu { background-color: #f6abb6; overflow: hidden; text-align: center;}
+.menu ul {list-style-type: none; margin: 0; padding: 0; display: flex; justify-content: center;}
+.menu li {flex: 1; flex-direction: column;}
+.menu li a {display: block; color: f6abb6; padding: 10px; width: 95%; text-decoration: none; font-size: 20px; font-family: "Lexend Deca"; color: black;}
+.menu li a:hover {background-color: #f4b6c2; color: black;}
+
+/* nghịch ạ hihi*/
+.nut-keo-len-dau-trang {position: fixed; bottom: 20px; right: 20px; background-color: #c7818b; color: white; border: none; padding: 15px 20px; cursor: pointer; border-radius: 7px; display: none; font-size: 15px;}
