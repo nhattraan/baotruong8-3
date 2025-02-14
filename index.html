@@ -4,50 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Báo Trường - Thế Giới Học Đường</title>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <style>       
-        header {background-color: #f6abb6; color: white; padding: 1px; font-family: "Playfair Display"; font-size: 30px}
-        footer {background-color: #f4b6c2; color: white; padding: 10px;}
-        label {display: block; padding: 10px}
-        h2 {font-family: "Noto Serif"; text-align: center;}
-        p {font-family: "Overpass"}
-        .header {display: flex; justify-content: space-between; align-items: center; padding: 15px 20px; background-color: #f6abb6; border-bottom: 2px solid #ddd;}
-        .header-text {display: flex; flex-direction: column;}
-        .header-text .title {font-size: 50px; font-weight: bold; color: #333; font-family: "Anton", serif;}
-        .header-text .subtitle {font-size: 30px; color: #777;}
-        .logo-container {display: flex; align-items: center; gap: 10px;}
-        .logo-container img {width: 100px; height: auto;}
-        .school-info {display: flex; flex-direction: column; text-align: right;}
-        .school-info .school-name {font-size: 20px; font-weight: bold; color: #444;}
-        .school-info .class-name {font-size: 15px; color: #777;}
-        .content {background-color: #ead5dc; padding: 10px;}
-        .baiviet {background-color: #eec9d2; padding: 5px; border: solid; border-color: #f6abb6; margin: 10px;}
-        .bai-viet {background-color: #eec9d2; padding: 5px; border: solid; border-color: #f6abb6; margin: 10px; display: flex; align-items: flex-start; gap: 15px;}
-        .bai-viet img {width: 150px; height: auto;}
-        .bai-viet-chu {display: flex; flex-direction: column;}
-        .bai-viet-tieu-de {font-size: 18px; font-weight: bold;}
-        .bai-viet-doan-gioi-thieu {margin-top: 8px;}
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lexend+Deca:wght@100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header class="header">
-    <div class="header-text">
-        <div class="title">Thế Giới Học Đường</div>
-        <div class="subtitle">Cập Nhật Tin Tức Học Sinh</div>
+    <div class="tieu-de">
+        <div class="chinh">Thế Giới Học Đường</div>
+        <div class="phu">Cập Nhật Tin Tức Học Sinh</div>
     </div>
-    <div class="logo-container">
-        <div class="school-info">
-            <div class="school-name">Trường THPT Nguyễn Thượng Hiền</div>
-            <div class="class-name">Lớp 12/4</div>
+    <div class="logo">
+        <div class="thong-tin-truong">
+            <div class="truong">Trường THPT Nguyễn Thượng Hiền</div>
+            <div class="lop">Lớp 12/4</div>
         </div>
     <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/313895961_1570553516707499_6301282620116482894_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=0024fc&_nc_ohc=wVwSQf1fHXUQ7kNvgHd8EqG&_nc_oc=Adi8iNHbhmnpFgv3wzNd0Vyiwd88Ts73GWJc8Osg0gyQwHw5JYdk5JNXViuqC8I1tE7j6zRFSOTCpT7Ztq-9juqJ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1gHNg06lBOBwXtleVQ5l2QZ9fTID51j1b58VKw47Dtl9iA&oe=67D5251D&dl=1" alt="Logo Trường";>
     </div>
 </header>
+    <nav class="menu">
+        <ul>
+            <li><a href="#baiviet"><strong>Bài Viết</strong></a></li>
+            <li><a href="#anh"><strong>Ảnh</strong></a></li>
+            <li><a href="#amnhacvavideoclip"><strong>Âm Nhạc và Video Clip</strong></a></li>
+            <li><a href="#gioithieu"><strong>Giới Thiệu</strong></a></li>
+            <li><a href="#binhluan"><strong>Bình Luận</strong></a></li>
+        </ul>
+    </nav>
 
 <div class="content region">
 
-    <h2>Các Bài Viết</h2>
+    <h2 id="baiviet">Các Bài Viết</h2>
 <div class="bai-viet"> 
         <img src="https://tse2.mm.bing.net/th?id=OIP.b18spBP0up5AKDeeN3G8tQHaHa&pid=Api" alt="Ảnh1" width= "100px"; padding= "10px";>
     <div class="bai-viet-chu">
@@ -77,18 +65,19 @@
     </div>
 </div>
 
-    <h2>Góc Ảnh</h2>
+    <h2 id="anh">Góc Ảnh</h2>
     <p>Những bức ảnh đẹp về hoạt động trường lớp, các sự kiện của trường sẽ được cập nhật tại đây.</p>
     <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/334907445_510139177936846_1806491466988575202_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=0024fc&_nc_ohc=yZjQL6HauOEQ7kNvgFr8Tvz&_nc_oc=AdgTdfpii2Xy-YQYvWc34htm-Rmbl3jlB0z38qAYWJJFHmQeqy82kQPZqjPIAuHzk1Ys5wf4cx9b5MyHujgvmzTw&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1gHegPUlWl4piVckocErNkqZ4k9pmxrki5HaTboYx2pE2A&oe=67D519CE&dl=1" alt="ảnh" width= "300px"; padding= "10px";>
     <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/431086671_424092226838341_700633933547900721_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=0024fc&_nc_ohc=6lkCtYLGpRgQ7kNvgGnRBtx&_nc_oc=AdibLq5ilaPdeXB_V1_4FFF8EXssRY9qU1GSFP1e-OFuj3wSzDy2mf8V7vt34Q24dSM5xs-X458D-PbTRdGpG_HD&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1gE9bm7Sw6qFUwyTDe2iDvGkF92aYlFHvy2t-OYpakB2mw&oe=67D5203E&dl=1" alt="ảnh" width= "300px"; padding= "10px";>
     <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/333467890_750547843086718_3389643617178327839_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=0024fc&_nc_ohc=zbQ58xLbCHEQ7kNvgFK-HwZ&_nc_oc=AdhM-Uarb3cocGdwhOOLay97IfAWIyNG7B8BIISNC6DHxd3scY7pBbFpECy556k1K2pubbqI3bBxj6r0SaHI_jPV&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1gESfPKJ5qnmncSyd9D79zGAr5O0taCEz3LNhehdo1VKfA&oe=67D50A5F&dl=1" alt="ảnh" width= "300px"; padding= "10px";>
 
-    <h2>Góc Âm Nhạc và Video Clip</h2>
+    <h2 id="amnhacvavideoclip">Góc Âm Nhạc và Video Clip</h2>
     <p>Hãy cùng thưởng thức video clip về học đường do các học sinh trong trường thực hiện.</p>
-    <video src="https://video.xx.fbcdn.net/v/t42.3356-2/431270914_7170890226364903_6789159256628913876_n.mp4?_nc_cat=100&ccb=1-7&_nc_sid=4f86bc&_nc_ohc=ZBJmXN6Ro3YQ7kNvgHEW-6U&_nc_oc=AdgTLLHS6hI6gsjoXixEY_WF2K2mv5YQp9GVBqe7pegj0Cv38Wn5Z-s3wc9a7EghSHi6aceWs345Wi1x6sijVgyy&_nc_zt=28&_nc_ht=scontent.xx&_nc_gid=AAvD-GttCOhV_6D7mEczKJO&oh=03_Q7cD1gEKC497KXlDenpm19BI1eOkiI5niU9HkdxHycR7_tWZDA&oe=67AFA45C&dl=1" type="video/mp4" width= "500px"; padding= "100px" controls></video>
-    <video src="https://video.xx.fbcdn.net/v/t42.3356-2/431909354_7925909057437799_243709752653036122_n.mp4?_nc_cat=111&ccb=1-7&_nc_sid=4f86bc&_nc_ohc=5wVkaNJB2eMQ7kNvgFLfPdW&_nc_oc=Adi9--vlCXs-mEQJuOa_tO07ca55kdd6p7doErhQtzAYUhZGgGPl7zXGvt8jaVama7RlwXJDHqgy2ABEeAyO2Ogw&_nc_zt=28&_nc_ht=scontent.xx&_nc_gid=AAvD-GttCOhV_6D7mEczKJO&oh=03_Q7cD1gECk1jOqzA5UuZrVU9p06vl5Zt5_Cq3evQ79ldcV8eq7A&oe=67AF9ADC&dl=1" type="video/mp4" width= "500px"; padding= "100px" controls></video>
+    <p><iframe width="560" height="315" src="https://www.youtube.com/embed/ZvbwY5qUYnc?si=rq-UxYK-GOGwXjgU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+    <video src="https://video.xx.fbcdn.net/v/t42.3356-2/431270914_7170890226364903_6789159256628913876_n.mp4?_nc_cat=100&ccb=1-7&_nc_sid=4f86bc&_nc_ohc=ZBJmXN6Ro3YQ7kNvgHEW-6U&_nc_oc=AdgTLLHS6hI6gsjoXixEY_WF2K2mv5YQp9GVBqe7pegj0Cv38Wn5Z-s3wc9a7EghSHi6aceWs345Wi1x6sijVgyy&_nc_zt=28&_nc_ht=scontent.xx&_nc_gid=AAvD-GttCOhV_6D7mEczKJO&oh=03_Q7cD1gEKC497KXlDenpm19BI1eOkiI5niU9HkdxHycR7_tWZDA&oe=67AFA45C&dl=1" type="video/mp4" width= "400px" controls></video>
+    <video src="https://video.xx.fbcdn.net/v/t42.3356-2/431909354_7925909057437799_243709752653036122_n.mp4?_nc_cat=111&ccb=1-7&_nc_sid=4f86bc&_nc_ohc=5wVkaNJB2eMQ7kNvgFLfPdW&_nc_oc=Adi9--vlCXs-mEQJuOa_tO07ca55kdd6p7doErhQtzAYUhZGgGPl7zXGvt8jaVama7RlwXJDHqgy2ABEeAyO2Ogw&_nc_zt=28&_nc_ht=scontent.xx&_nc_gid=AAvD-GttCOhV_6D7mEczKJO&oh=03_Q7cD1gECk1jOqzA5UuZrVU9p06vl5Zt5_Cq3evQ79ldcV8eq7A&oe=67AF9ADC&dl=1" type="video/mp4" width= "400px" controls></video>
 
-    <h2>Giới Thiệu</h2>
+    <h2 id="gioithieu">Giới Thiệu</h2>
 <div class="baiviet">
     <p style="text-align: center;"><b>**Giới thiệu Trang Web Báo Trường – Lớp 12/4, Trường Nguyễn Thượng Hiền**</b></p>  
     <p>Chào mừng bạn đến với chúng tôi, trang báo trường chính thức của lớp **12/4 – Trường THPT Nguyễn Thượng Hiền**! 🌟 Đây là nơi lưu giữ những khoảnh khắc đáng nhớ, những bài viết đầy cảm xúc và những câu chuyện học đường gắn liền với tuổi trẻ của chúng mình.  </p>
@@ -105,7 +94,7 @@
     <p style="text-align: center;"><b>👉 **Hãy cùng theo dõi, đóng góp và lan tỏa những điều ý nghĩa nhé!** 🚀💙</b></p>
 </div>
 
-    <h2>Góc Bình Luận</h2>
+    <h2 id="binhluan">Góc Bình Luận</h2>
     <p>Chúng tôi rất mong nhận được ý kiến đóng góp từ các bạn đọc!</p>
     <form action="submit_comment.php" method="POST">
         <label for="name">Tên của bạn:
@@ -120,7 +109,7 @@
 
 <footer>
     <p><strong>Thông Tin Về Nhóm:</strong> Nhóm Nhật và những người bạn - Các học sinh lớp 12/4</p>
-    <p><strong>Email Liên Hệ:</strong> <a href="tranquangnhat10072007.com" style="color: white;">tranquangnhat10072007@gmail.com</a></p>
+    <p><strong>Email Liên Hệ: </strong>tranquangnhat10072007@gmail.com</p>
     <p><strong>Ngày Cập Nhật:</strong> 12/02/2025</p>
     <p><strong>Nguồn Tham Khảo:</strong></p>
     <i>
@@ -129,6 +118,22 @@
     <p>designerviet.com</p>
     </i>
 </footer>
+
+<!-- Nghịch ạ hihi -->
+<button class="nut-keo-len-dau-trang" onclick="scrollToTop()">▲ Lên đầu</button>
+    <script>
+        window.onscroll = function() {
+            let btn = document.querySelector(".nut-keo-len-dau-trang");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+    </script>
 
 </body>
 </html>
