@@ -1,11 +1,11 @@
-header {background-color: #f6abb6; color: white; padding: 1px; font-family: "Playfair Display"; font-size: 30px;}
+header {font-family: "Playfair Display";}
 footer {background-color: #f4b6c2; color: white; padding: 10px;}
 label {display: block; padding: 10px;}
 h2 {font-family: "Noto Serif"; text-align: center;}
 p {font-family: "Overpass";}
 .header {display: flex; justify-content: space-between; align-items: center; padding: 15px 20px; background-color: #f6abb6; border-bottom: 2px solid #ddd;}
 .tieu-de {display: flex; flex-direction: column;}
-.tieu-de .chinh {font-size: 50px; font-weight: bold; color: #333; font-family: "Anton", serif;}
+.tieu-de .chinh {font-size: 50px; font-weight: bold; color: #333; font-family: "Anton";}
 .tieu-de .phu {font-size: 30px; color: #777;}
 .logo {display: flex; align-items: center; gap: 10px;}
 .logo img {width: 100px; height: auto;}
